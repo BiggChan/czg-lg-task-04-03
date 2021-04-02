@@ -1,11 +1,8 @@
 // 注册
-import { observer } from "mobx-react";
-import useStores from '../stores/useStores'
 import { Center , Input, Stack, InputGroup, InputLeftElement, Button, Checkbox, Spacer, FormLabel, Text, Flex, Box } from "@chakra-ui/react"
 import { LockIcon, EmailIcon, EditIcon } from '@chakra-ui/icons'
 
-const Login = observer(() => {
-  const { userStore } = useStores()
+const Login = () => {
   return (
     <form>
       <Stack 
@@ -54,5 +51,5 @@ const Login = observer(() => {
       </Stack>
     </form>
   )
-})
+}
 export default Login;

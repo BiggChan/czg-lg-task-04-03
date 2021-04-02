@@ -1,6 +1,4 @@
 // 登录
-import { observer } from "mobx-react";
-import useStores from '../stores/useStores'
 import { Input, FormHelperText, Stack, FormControl, InputGroup, InputLeftElement, Button, Checkbox, Spacer, FormLabel, Text, Flex, useToast  } from "@chakra-ui/react"
 import { LockIcon, EmailIcon, EditIcon } from '@chakra-ui/icons'
 import axios from 'axios';
@@ -8,9 +6,8 @@ import {  useFormik } from "formik";
 import * as Yup from "yup";
 
 
-const Login = observer(() => {
+const Login = () => {
   
-  const { userStore } = useStores()
   const toast = useToast()
   const formik =  useFormik(
     {initialValues:{email:'', password: ''}, 
@@ -81,5 +78,5 @@ const Login = observer(() => {
       </Stack>
     </form>
   )
-})
+}
 export default Login;
