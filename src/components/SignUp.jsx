@@ -1,5 +1,5 @@
 // 注册
-import { Center , Input, Stack, InputGroup, InputLeftElement, Button, Checkbox, Spacer, FormLabel, Text, Flex, Box } from "@chakra-ui/react"
+import { Center , Input, Stack, InputGroup, InputLeftElement, Button, Text, } from "@chakra-ui/react"
 import { LockIcon, EmailIcon, EditIcon } from '@chakra-ui/icons'
 
 const Login = () => {

@@ -1,7 +1,6 @@
 // 登录
-import { Input, FormHelperText, Stack, FormControl, InputGroup, InputLeftElement, Button, Checkbox, Spacer, FormLabel, Text, Flex, useToast  } from "@chakra-ui/react"
-import { LockIcon, EmailIcon, EditIcon } from '@chakra-ui/icons'
-import axios from 'axios';
+import { Input, FormHelperText, Stack, FormControl, InputGroup, InputLeftElement, Button, Checkbox, Spacer, Text, Flex, useToast  } from "@chakra-ui/react"
+import { LockIcon, EmailIcon } from '@chakra-ui/icons'
 import {  useFormik } from "formik";
 import * as Yup from "yup";
 
